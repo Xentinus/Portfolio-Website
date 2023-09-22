@@ -1,337 +1,687 @@
-<!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Hamarosan</title>
-    <style>
-      /* -------------------------------------
-          GLOBAL RESETS
-      ------------------------------------- */
-      
-      /*All the styling goes here*/
-      
-      img {
-        border: none;
-        -ms-interpolation-mode: bicubic;
-        max-width: 100%; 
-      }
+<!DOCTYPE html>
+<html lang="hu">
+<head>
 
-      body {
-        background-color: #f6f6f6;
-        font-family: sans-serif;
-        -webkit-font-smoothing: antialiased;
-        font-size: 14px;
-        line-height: 1.4;
-        margin: 0;
-        padding: 0;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%; 
-      }
+	<!--
+		Basic
+	-->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kellner Béla - Portfólió</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="description" content="vCard & Resume" />
+	<meta name="keywords" content="vcard, resposnive, resume, personal, card, cv, cards, portfolio" />
+	<meta name="author" content="Kellner Béla" />
 
-      table {
-        border-collapse: separate;
-        mso-table-lspace: 0pt;
-        mso-table-rspace: 0pt;
-        width: 100%; }
-        table td {
-          font-family: sans-serif;
-          font-size: 14px;
-          vertical-align: top; 
-      }
+	<!--
+		Load Fonts
+	-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-      /* -------------------------------------
-          BODY & CONTAINER
-      ------------------------------------- */
+	<!--
+		Load CSS
+	-->
+	<link rel="stylesheet" href="css/basic.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="css/blogs.css" />
+	<link rel="stylesheet" href="css/ionicons.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
 
-      .body {
-        background-color: #f6f6f6;
-        width: 100%; 
-      }
+	<!--
+		Background Gradient
+	-->
+	<link rel="stylesheet" href="css/gradient.css" />
 
-      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-      .container {
-        display: block;
-        margin: 0 auto !important;
-        /* makes it centered */
-        max-width: 580px;
-        padding: 10px;
-        width: 580px; 
-      }
+	<!--
+		Template New-Skin
+	-->
+	<link rel="stylesheet" href="css/new-skin/new-skin.css" />
 
-      /* This should also be a block element, so that it will fill 100% of the .container */
-      .content {
-        box-sizing: border-box;
-        display: block;
-        margin: 0 auto;
-        max-width: 580px;
-        padding: 10px; 
-      }
+	<!--
+		Template Color
+	-->
+	<link rel="stylesheet" href="css/template-colors/blue.css" />
 
-      /* -------------------------------------
-          HEADER, FOOTER, MAIN
-      ------------------------------------- */
-      .main {
-        background: #ffffff;
-        border-radius: 3px;
-        width: 100%; 
-      }
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
-      .wrapper {
-        box-sizing: border-box;
-        padding: 20px; 
-      }
+	<!--
+		Favicons
+	-->
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
 
-      .content-block {
-        padding-bottom: 10px;
-        padding-top: 10px;
-      }
+</head>
 
-      .footer {
-        clear: both;
-        margin-top: 10px;
-        text-align: center;
-        width: 100%; 
-      }
-        .footer td,
-        .footer p,
-        .footer span,
-        .footer a {
-          color: #999999;
-          font-size: 12px;
-          text-align: center; 
-      }
+<body>
+	<div class="page new-skin">
 
-      /* -------------------------------------
-          TYPOGRAPHY
-      ------------------------------------- */
-      h1,
-      h2,
-      h3,
-      h4 {
-        color: #000000;
-        font-family: sans-serif;
-        font-weight: 400;
-        line-height: 1.4;
-        margin: 0;
-        margin-bottom: 30px; 
-      }
+		<!-- preloader -->
+		<div class="preloader">
+			<div class="centrize full-width">
+				<div class="vertical-center">
+					<div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-      h1 {
-        font-size: 35px;
-        font-weight: 300;
-        text-align: center;
-        text-transform: capitalize; 
-      }
+		<!-- background -->
+		<div class="background gradient">
+			<ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+		</div>
 
-      p,
-      ul,
-      ol {
-        font-family: sans-serif;
-        font-size: 14px;
-        font-weight: normal;
-        margin: 0;
-        margin-bottom: 15px; 
-      }
-        p li,
-        ul li,
-        ol li {
-          list-style-position: inside;
-          margin-left: 5px; 
-      }
+		<!--
+			Container
+		-->
+		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
 
-      a {
-        color: #3498db;
-        text-decoration: underline; 
-      }
+			<!--
+				Header
+			-->
+			<header class="header">
 
-      /* -------------------------------------
-          BUTTONS
-      ------------------------------------- */
-      .btn {
-        box-sizing: border-box;
-        width: 100%; }
-        .btn > tbody > tr > td {
-          padding-bottom: 15px; }
-        .btn table {
-          width: auto; 
-      }
-        .btn table td {
-          background-color: #ffffff;
-          border-radius: 5px;
-          text-align: center; 
-      }
-        .btn a {
-          background-color: #ffffff;
-          border: solid 1px #3498db;
-          border-radius: 5px;
-          box-sizing: border-box;
-          color: #3498db;
-          cursor: pointer;
-          display: inline-block;
-          font-size: 14px;
-          font-weight: bold;
-          margin: 0;
-          padding: 12px 25px;
-          text-decoration: none;
-          text-transform: capitalize; 
-      }
+				<!-- header profile -->
+				<div class="profile">
+					<div class="title">Kellner Béla</div>
+					<div class="subtitle subtitle-typed">
+						<div class="typing-title">
+							<p>Rendszergazda</p>
+							<p>Programozó</p>
+							<p>Biztonságtechnikus</p>
+						</div>
+					</div>
+				</div>
 
-      .btn-primary table td {
-        background-color: #3498db; 
-      }
+				<!-- menu -->
+				<div class="top-menu">
+					<ul>
+						<li class="active">
+							<a href="#about-card">
+								<span class="icon ion-person"></span>
+								<span class="link">Rólam</span>
+							</a>
+						</li>
+						<li>
+							<a href="#resume-card">
+								<span class="icon ion-android-list"></span>
+								<span class="link">Tapasztalat</span>
+							</a>
+						</li>
+						<li>
+							<a href="#skills-card">
+								<span class="icon ion-ribbon-b"></span>
+								<span class="link">Képességeim</span>
+							</a>
+						</li>
+						<li>
+							<a href="#works-card">
+								<span class="icon ion-paintbrush"></span>
+								<span class="link">Munkáim</span>
+							</a>
+						</li>
+						<li>
+							<a href="#contacts-card">
+								<span class="icon ion-at"></span>
+								<span class="link">Kapcsolat</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 
-      .btn-primary a {
-        background-color: #3498db;
-        border-color: #3498db;
-        color: #ffffff; 
-      }
+			</header>
 
-      /* -------------------------------------
-          OTHER STYLES THAT MIGHT BE USEFUL
-      ------------------------------------- */
-      .last {
-        margin-bottom: 0; 
-      }
+			<!--
+				Card - Started
+			-->
+			<div class="card-started" id="home-card">
 
-      .first {
-        margin-top: 0; 
-      }
+				<!--
+					Profile
+				-->
+				<div class="profile no-photo">
 
-      .align-center {
-        text-align: center; 
-      }
+					<!-- profile image -->
+					<div class="slide" style="background-image: url(images/profile/kellner_bela_2023.jpg);"></div>
 
-      .align-right {
-        text-align: right; 
-      }
+					<!-- profile titles -->
+					<div class="title">Kellner Béla</div>
+					<div class="subtitle subtitle-typed">
+						<div class="typing-title">
+							<p>Rendszergazda</p>
+							<p>Programozó</p>
+							<p>Biztonságtechnikus</p>
+						</div>
+					</div>
 
-      .align-left {
-        text-align: left; 
-      }
+					<!-- profile socials -->
+					<div class="social">
+						<a target="_blank" href="https://www.linkedin.com/in/xentinus/"><span class="fa fa-linkedin"></span></a>
+						<a target="_blank" href="https://github.com/Xentinus"><span class="fa fa-github"></span></a>
+						<a target="_blank" href="https://www.facebook.com/Xentinus/"><span class="fa fa-facebook"></span></a>
+					</div>
 
-      .clear {
-        clear: both; 
-      }
+					<!-- profile buttons -->
+					<div class="lnks">
+						<a href="#" class="lnk">
+							<span class="text">CV letöltése</span>
+							<span class="ion ion-archive"></span>
+						</a>
+						<a href="#" class="lnk discover">
+							<span class="text">Kapcsolatba lépés</span>
+							<span class="arrow"></span>
+						</a>
+					</div>
 
-      .mt0 {
-        margin-top: 0; 
-      }
+				</div>
 
-      .mb0 {
-        margin-bottom: 0; 
-      }
+			</div>
 
-      .preheader {
-        color: transparent;
-        display: none;
-        height: 0;
-        max-height: 0;
-        max-width: 0;
-        opacity: 0;
-        overflow: hidden;
-        mso-hide: all;
-        visibility: hidden;
-        width: 0; 
-      }
+			<!--
+				Card - Rólam
+			-->
+			<div class="card-inner animated active" id="about-card">
+				<div class="card-wrap">
 
-      .powered-by a {
-        text-decoration: none; 
-      }
+					<!--
+						About
+					-->
+					<div class="content about">
 
-      hr {
-        border: 0;
-        border-bottom: 1px solid #f6f6f6;
-        margin: 20px 0; 
-      }
+						<!-- title -->
+						<div class="title">Rólam</div>
 
-      /* -------------------------------------
-          RESPONSIVE AND MOBILE FRIENDLY STYLES
-      ------------------------------------- */
-      @media only screen and (max-width: 620px) {
-        table.body h1 {
-          font-size: 28px !important;
-          margin-bottom: 10px !important; 
-        }
-        table.body p,
-        table.body ul,
-        table.body ol,
-        table.body td,
-        table.body span,
-        table.body a {
-          font-size: 16px !important; 
-        }
-        table.body .wrapper,
-        table.body .article {
-          padding: 10px !important; 
-        }
-        table.body .content {
-          padding: 0 !important; 
-        }
-        table.body .container {
-          padding: 0 !important;
-          width: 100% !important; 
-        }
-        table.body .main {
-          border-left-width: 0 !important;
-          border-radius: 0 !important;
-          border-right-width: 0 !important; 
-        }
-        table.body .btn table {
-          width: 100% !important; 
-        }
-        table.body .btn a {
-          width: 100% !important; 
-        }
-        table.body .img-responsive {
-          height: auto !important;
-          max-width: 100% !important;
-          width: auto !important; 
-        }
-      }
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-8 col-t-12 col-m-12 border-line-v">
+								<div class="text-box">
+									<p>
+										Kellner Béla vagyok, jelenleg rendszergazdaként dolgozom, és szenvedélyesen programozom hobbi szinten.
+										Ambícióm, hogy a jövőben a teljes munkaidős programozás felé mozduljak el, és a szoftverfejlesztés terén mélyebb szakértővé váljak.
+										Szeretem a kihívást jelentő problémák megoldását, és mindig törekszem a szakmai fejlődésre és tanulásra.
+										Szabadidőmben elkötelezetten fejlesztem magam az informatika világában, különös hangsúlyt fektetve a C# programozásra.
+									</p>
+								</div>
+							</div>
+							<div class="col col-d-4 col-t-12 col-m-12 border-line-v">
+								<div class="info-list">
+									<ul>
+										<li><strong>Életkor</strong> <span id="age"></span></li>
+										<li><strong>Város</strong> Budapest</li>
+										<li><strong>Jogosítvány</strong> B kat.</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
 
-      /* -------------------------------------
-          PRESERVE THESE STYLES IN THE HEAD
-      ------------------------------------- */
-      @media all {
-        .ExternalClass {
-          width: 100%; 
-        }
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-          line-height: 100%; 
-        }
-      }
+					</div>
 
-    </style>
-  </head>
-  <body>
-    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
-      <tr>
-        <td>&nbsp;</td>
-        <td class="container">
-          <div class="content">
-            <p style="text-align: center;">A portfólió jelenleg készítés alatt van.</p>
-            <p style="text-align: center;">Amennyiben érdekel a munkásságom nézz vissza később.</p>
-            <div class="footer">
-              <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td class="content-block powered-by">
-                    &copy; 2023 Béla Kellner
-                  </td>
-                </tr>
-              </table>
-            </div>
-            <!-- END FOOTER -->
+					<!--
+						Hobbies
+					-->
+					<div class="content fuct">
 
-          </div>
-        </td>
-        <td>&nbsp;</td>
-      </tr>
-    </table>
-  </body>
+						<!-- title -->
+						<div class="title">Hobbik</div>
+
+						<!-- content -->
+						<div class="row fuct-items">
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="fa fa-gamepad"></span></div>
+									<div class="name">Videójátékok</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="fas fa-seedling"></span></div>
+									<div class="name">Kertészkedés</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="fas fa-laptop-code"></span></div>
+									<div class="name">Programozás</div>
+								</div>
+							</div>
+
+							<!-- fuct item -->
+							<div class="col col-d-3 col-t-3 col-m-6 border-line-v">
+								<div class="fuct-item">
+									<div class="icon"><span class="fas fa-running"></span></div>
+									<div class="name">Futás</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Tapasztalat
+			-->
+			<div class="card-inner" id="resume-card">
+				<div class="card-wrap">
+
+					<!--
+						Resume
+					-->
+					<div class="content resume">
+
+						<!-- title -->
+						<div class="title">Tapasztalataim</div>
+
+						<!-- content -->
+						<div class="row">
+
+							<!-- experience -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="fa fa-briefcase"></i></div>
+									<div class="name">Munkahelyek</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h active">
+										<div class="date">2023 - Jelenleg</div>
+										<div class="name">Biztonságtechnikus</div>
+										<div class="company">BVOP Gazdasági Ellátó Intézet</div>
+										<p>
+											Maradtam Sopronkőhidán, és a munkaköröm is változatlan maradt.
+											Az egyetlen különbség az, hogy most a BV GEI intézet irányítása alá tartozom, mivel a teljes BV struktúrája átalakult, és ennek következtében kerültem át.
+										</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">2020-2023</div>
+										<div class="name">Informatikai főelőadó</div>
+										<div class="company">Sopronkőhidai Fegyház és Börtön</div>
+										<p>
+											Feladatom az informatikai illetve biztonságtechnikai infrastruktúra teljes körű kezelése, mely magában foglalja a Windows tartományi szerverek és hálózati eszközök (kamerák, dekóderek, NAS, Switchek, IP telefonok) programozását és üzemeltetését.
+										</p>
+										<p>
+											A felhasználók Windows és egyéb rendszerek jogosultságainak kezelése valamint az informatikai eszközök és anyagok nyilvántartásának vezetése is a feladataim közé tartozott.
+										</p>
+										<p>
+											Az általam kiépített rendszerek például Nold beléptetési rendszer valamint informatikai felügyelet rendszer (Zabbix) kiépítése és karbantartása.
+										</p>
+									</div>
+									<div class="resume-item">
+										<div class="date">2019-2020</div>
+										<div class="name">Informatikai előadó</div>
+										<div class="company">Sopronkőhidai Fegyház és Börtön</div>
+										<p>
+											Feladatom elsősorban az egyedi informatikai infrastruktúra teljes megértése és a szükséges hálózati eszközök telepítése volt. Valamint az informatikai eszközök és anyagok nyilvántartása.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- education -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="resume-title border-line-h">
+									<div class="icon"><i class="fa fa-university"></i></div>
+									<div class="name">Tanulmányok</div>
+								</div>
+								<div class="resume-items">
+									<div class="resume-item border-line-h">
+										<div class="date">2020-2021</div>
+										<div class="name">Hivatásos rendészeti vizsga</div>
+										<div class="company">BVOTRK</div>
+										<p>
+											Elvégeztem a rendvédelmi szervek alapfokú vizsgáját.
+										</p>
+									</div>
+									<div class="resume-item border-line-h">
+										<div class="date">2018-2019</div>
+										<div class="name">Grafikus</div>
+										<div class="company">Soproni SzC Handler Nándor Technikum</div>
+										<p>
+											Sikeresen elsajátítottam az Adobe szoftvercsalád népszerű alkalmazásainak, mint például Photoshop, InDesign és Illustrator, használatát. Ezen kívül elmélyítettem ismereteimet a nyomdászati és grafikai tervezés területén, amelyek elengedhetetlenek egy vállalat teljes arculatának tervezéséhez és megvalósításához.
+										</p>
+									</div>
+									<div class="resume-item">
+										<div class="date">2010-2016</div>
+										<div class="name">Webmester</div>
+										<div class="company">Soproni SzC Handler Nándor Technikum</div>
+										<p>
+											Az első évben nyelvi előkészítő program keretében angol nyelvet tanultam, majd négy év után sikeresen teljesítettem az érettségi vizsgát. Az érettségi tantárgyak mellett részt vettem szakmai órákon is, ahol az informatikai rendszerüzemeltetés alapjaival ismerkedtem meg. Az utolsó évben pedig a webmester szakmát választottam, és ebben a szakmában szereztem képesítést.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!--
+				Card - Képességeim
+			-->
+			<div class="card-inner" id="skills-card">
+				<div class="card-wrap">
+
+					<!--
+						Skills
+					-->
+					<div class="content skills">
+
+						<!-- title -->
+						<div class="title">Képességeim</div>
+
+						<!-- content -->
+						<div class="row">
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list circles">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fa fa-code"></i></div>
+										<div class="name">Programozás</div>
+									</div>
+									<ul>
+										<li>
+											<div class="name">C# / .NET</div>
+											<div class="progress p90">
+												<span>85%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">Javascript</div>
+											<div class="progress p75">
+												<span>80%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">MYSQL</div>
+											<div class="progress p85">
+												<span>70%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">MongoDB</div>
+											<div class="progress p85">
+												<span>85%</span>
+											</div>
+										</li>
+										<li>
+											<div class="name">HTML / CSS</div>
+											<div class="progress p95">
+												<span>95%</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list dotted">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fa fa-flag"></i></div>
+										<div class="name">Nyelvek</div>
+									</div>
+									<ul>
+										<li class="border-line-h">
+											<div class="name">Magyar</div>
+											<div class="progress">
+												<div class="percentage" style="width:90%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Angol</div>
+											<div class="progress">
+												<div class="percentage" style="width:60%;"></div>
+											</div>
+										</li>
+										<li class="border-line-h">
+											<div class="name">Német (jelenleg tanulás alatt)</div>
+											<div class="progress">
+												<div class="percentage" style="width:10%;"></div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Munkáim
+			-->
+			<div class="card-inner" id="works-card">
+				<div class="card-wrap">
+
+					<!--
+						Works
+					-->
+					<div class="content works">
+
+						<!-- title -->
+						<div class="title">Munkáim</div>
+
+						<!-- filters -->
+						<div class="filter-menu filter-button-group">
+							<div class="f_btn active">
+								<label><input type="radio" name="fl_radio" value="grid-item" />Minden</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="programming" />Programozás</label>
+							</div>
+							<div class="f_btn">
+								<label><input type="radio" name="fl_radio" value="graphic" />Grafika</label>
+							</div>
+						</div>
+
+						<!-- content -->
+						<div class="row grid-items border-line-v">
+
+							<!-- work item design -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item programming border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#popup-1" class="has-popup-media">
+											<img src="images/works/iszrv2.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#popup-1" class="name has-popup-media">ISZR v2</a>
+										<div class="category">ASP.NET CORE 6 MVC</div>
+									</div>
+									<div id="popup-1" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/iszrv2.jpg" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Informatikai Szolgálati jegy Rendszer v2</h1>
+													<div class="blog-detail">ASP.NET CORE 6 MVC</div>
+													<div class="blog-content">
+														<p>
+															Röviden <b>ISZR</b>, egy C# nyelven készült <b>ASP.NET CORE 6 MVC keretrendszerű web alkalmazás</b> amely segítségével a felhasználók jogosultságokat, kamerafelvétel lementéseket igényelhetnek a helyi informatikai csoporttól.
+														</p>
+														<p>
+															A web alkalmazás célja, hogy a felhasználók egyszerűen, könnyedén igényelhessenek és az igénylések állapotát is követni tudják.
+														</p>
+														<ul class="list-style">
+															<li>Reszponzív felület</li>
+															<li>Regisztráció mentes, Intranet elven működik</li>
+															<li>Felhasználói profilok, amik tartalmaznak minden elérhetőséget</li>
+															<li>Igénylések státuszait a felhasználók és ügyintézők követni tudják</li>
+															<li>Könnyen áttekinthető és értelmezhető igénylési lap</li>
+															<li>Hivatkozásokkal ellátott igénylési lapok és listák</li>
+															<li>Globális keresés</li>
+															<li>Rendszer beállítások szolgáltatások beállításához</li>
+															<li>Automatikus e-mail címes értesítés az igénylésben szereplőknek</li>
+															<li>Automatikus adatok frissítése Active Directory szerveren</li>
+															<li>Automatikus elérhetőség figyelés</li>
+															<li>Külön adminisztratív felület rendszer</li>
+															<li>Microsoft SQL Server segítségével minden megjelenített adat dinamikus</li>
+															<li>Egyhelyen kezelhető parkolási engedélyek és telefonos PIN kódok dinamikus kezelése</li>
+															<li>Beépített hibabejelentő rendszer</li>
+															<li>Active Directory jogosultság konvertáló</li>
+														</ul>
+														<p>
+															További információkat a GitHub oldalon olvashatsz.
+														</p>
+													</div>
+													<br />
+													<a href="https://github.com/Xentinus/ISZR" class="button">
+														<span class="text">Projekt megtekintése</span>
+														<span class="arrow"></span>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- work item design -->
+							<div class="col col-d-6 col-t-6 col-m-12 grid-item programming border-line-h">
+								<div class="box-item">
+									<div class="image">
+										<a href="#popup-2" class="has-popup-media">
+											<img src="images/works/iszrv1.jpg" alt="" />
+											<span class="info">
+												<span class="ion ion-images"></span>
+											</span>
+										</a>
+									</div>
+									<div class="desc">
+										<a href="#popup-2" class="name has-popup-media">ISZR v1</a>
+										<div class="category">C# Windows Forms App</div>
+									</div>
+									<div id="popup-2" class="popup-box mfp-fade mfp-hide">
+										<div class="content">
+											<div class="image">
+												<img src="images/works/iszrv1.jpg" alt="">
+											</div>
+											<div class="desc">
+												<div class="post-box">
+													<h1>Informatikai Szolgálati jegy Rendszer</h1>
+													<div class="blog-detail">C# Windows Forms App</div>
+													<div class="blog-content">
+														<p>Az ISZR első verziója amely C# nyelven írodott és Windows From alapokon működött.</p>
+														<p>Ebben a verzióban még nem voltak külön felhasználói profilok illetve adatbázisok a háttérben (ennek az oka, hogy nem voltak meg a technikai feltételek egy adatbázis létrehozásához a program megszületésekor)</p>
+														<p>
+															Minden felhasználónak manuálisan be kellett írni minden elérhetőséget amely a felhasználóval kapcsolatos. Majd a rendszer a háttérben megnyította a Word-öt és behelyesítette az adott helyekre a bekért adatokat.
+														</p>
+														<p>Az első verzió körülbelül 1,5 évig üzemelt majd át állt az új verziójú rendszerre amely elolvasható az ISZR v2-ben illetve annak GitHub repoján.</p>
+												</div>
+												<br />
+												<a href="https://github.com/Xentinus/SKFB_ISZR" class="button">
+													<span class="text">Projekt megtekintése</span>
+													<span class="arrow"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<!--
+				Card - Kapcsolat
+			-->
+			<div class="card-inner contacts" id="contacts-card">
+				<div class="card-wrap">
+
+					<!--
+						Conacts Info
+					-->
+					<div class="content contacts">
+
+						<!-- title -->
+						<div class="title">Elérhetőségeim</div>
+
+						<!-- content -->
+						<div class="row">
+							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
+								<div class="info-list">
+									<ul>
+										<li><strong>E-mail</strong> allas@kellner.dev</li>
+										<li><strong>Telefonszám</strong> +3630 890 0462</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clear"></div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+		<div class="s_overlay"></div>
+	</div>
+
+	<!--
+		jQuery Scripts
+	-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/jquery.magnific-popup.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/jquery.slimscroll.js"></script>
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/typed.js"></script>
+	<!--<script src="https://use.fontawesome.com/8da76d029b.js"></script>-->
+	<script src="https://kit.fontawesome.com/e1c9a73db7.js" crossorigin="anonymous"></script>
+
+	<!--
+		Main Scripts
+	-->
+	<script src="js/scripts.js"></script>
+
+</body>
 </html>
