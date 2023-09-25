@@ -18,8 +18,12 @@
 	<meta name="author" content="Béla Kellner" />
 	<meta name="url" content="https://kellner.dev/">
 	<meta name="coverage" content="Worldwide">
-	<meta http-equiv="Cache-Control" content="no-cache">
-	<meta http-equiv="Pragma" content="no-cache">
+
+	<!--
+		Cache (12 hours)
+	-->
+	<meta http-equiv="Cache-Control" content="max-age=43200, public">
+    	<meta http-equiv="Expires" content="<?php echo gmdate('D, d M Y H:i:s', time() + 43200) . ' GMT'; ?>">
 
 	<!--
 		Apple Tags
