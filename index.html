@@ -22,8 +22,7 @@
 	<!--
 		Cache (12 hours)
 	-->
-	<meta http-equiv="Cache-Control" content="max-age=43200, public">
-    	<meta http-equiv="Expires" content="<?php echo gmdate('D, d M Y H:i:s', time() + 43200) . ' GMT'; ?>">
+	<meta http-equiv="Cache-Control" content="max-age=86400">
 
 	<!--
 		Apple Tags
@@ -88,7 +87,6 @@
 		Favicons
 	-->
 	<link rel="shortcut icon" href="images/favicons/favicon.ico">
-
 </head>
 
 <body>
@@ -244,7 +242,7 @@
 
 						<!-- content -->
 						<div class="row">
-							<div class="col col-d-8 col-t-12 col-m-12 border-line-v">
+							<div class="col col-d-6 col-t-12 col-m-12 border-line-v">
 								<div class="text-box">
 									<p>
 										Kellner Béla vagyok, jelenleg rendszergazdaként dolgozom, és szenvedélyesen programozok hobbi szinten.
@@ -254,12 +252,13 @@
 									</p>
 								</div>
 							</div>
-							<div class="col col-d-4 col-t-12 col-m-12 border-line-v">
+							<div class="col col-d-6 col-t-12 col-m-12 border-line-v">
 								<div class="info-list">
 									<ul>
 										<li><strong>Életkor</strong> <span id="age"></span></li>
-										<li><strong>Város</strong> Budapest</li>
-										<li><strong>Jogosítvány</strong> B kat.</li>
+										<li><strong>Születési hely</strong> Sopron</li>
+										<li><strong>Jelenlegi lakhely</strong> Budapest</li>
+										<li><strong>Jogosítvány</strong> B kategória</li>
 									</ul>
 								</div>
 							</div>
@@ -458,7 +457,7 @@
 											</div>
 										</li>
 										<li>
-											<div class="name">Javascript</div>
+											<div class="name">Javascript / Node.js</div>
 											<div class="progress p75">
 												<span>80%</span>
 											</div>
@@ -481,6 +480,54 @@
 												<span>95%</span>
 											</div>
 										</li>
+										<li>
+											<div class="name">Git verziókezelés</div>
+											<div class="progress p90">
+												<span>90%</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<!-- skill item -->
+							<div class="col col-d-6 col-t-6 col-m-12 border-line-v">
+								<div class="skills-list list">
+									<div class="skill-title border-line-h">
+										<div class="icon"><i class="fab fa-app-store-ios"></i></div>
+										<div class="name">Ismert rendszerek</div>
+									</div>
+									<ul>
+										<li>
+											<div class="name">Adobe termékek (Photoshop, InDesign, Illustrator, XD, Premiere)</div>
+										</li>
+										<li>
+											<div class="name">Visual Studio</div>
+										</li>
+										<li>
+											<div class="name">Visual Studio Code</div>
+										</li>
+										<li>
+											<div class="name">HIKVISION</div>
+										</li>
+										<li>
+											<div class="name">SEAWING SIS</div>
+										</li>
+										<li>
+											<div class="name">Zabbix</div>
+										</li>
+										<li>
+											<div class="name">Snipe-IT</div>
+										</li>
+										<li>
+											<div class="name">GitHub</div>
+										</li>
+										<li>
+											<div class="name">PM2</div>
+										</li>
+										<li>
+											<div class="name">Sentry</div>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -494,13 +541,13 @@
 									</div>
 									<ul>
 										<li class="border-line-h">
-											<div class="name">Magyar</div>
+											<div class="name">Magyar (Anyanyelv)</div>
 											<div class="progress">
 												<div class="percentage" style="width:90%;"></div>
 											</div>
 										</li>
 										<li class="border-line-h">
-											<div class="name">Angol</div>
+											<div class="name">Angol (B1)</div>
 											<div class="progress">
 												<div class="percentage" style="width:60%;"></div>
 											</div>
@@ -535,7 +582,7 @@
 					<div class="content works">
 
 						<!-- title -->
-						<div class="title">Munkáim</div>
+						<div class="title">Munkáim (Feltöltés alatt)</div>
 
 						<!-- filters -->
 						<div class="filter-menu filter-button-group">
@@ -689,7 +736,7 @@
 							<div class="col col-d-12 col-t-12 col-m-12 border-line-v">
 								<div class="info-list">
 									<ul>
-										<li><strong>E-mail</strong> allas@kellner.dev</li>
+										<li><strong>E-mail cím</strong> allas@kellner.dev</li>
 										<li><strong>Telefonszám</strong> +3630 890 0462</li>
 									</ul>
 								</div>
@@ -711,20 +758,18 @@
 		jQuery Scripts
 	-->
 	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.validate.js"></script>
-	<script src="js/jquery.magnific-popup.js"></script>
-	<script src="js/imagesloaded.pkgd.js"></script>
-	<script src="js/isotope.pkgd.js"></script>
-	<script src="js/jquery.slimscroll.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/typed.js"></script>
-	<!--<script src="https://use.fontawesome.com/8da76d029b.js"></script>-->
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.slimscroll.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/typed.min.js"></script>
 	<script src="https://kit.fontawesome.com/e1c9a73db7.js" crossorigin="anonymous"></script>
 
 	<!--
 		Main Scripts
 	-->
-	<script src="js/scripts.js"></script>
-
+	<script src="js/scripts.min.js"></script>
 </body>
 </html>
