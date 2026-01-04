@@ -650,29 +650,56 @@
 										</div>
 										<div class="desc">
 											<div class="post-box">
-												<h1>Homassy - Home Storage Management</h1>
-												<div class="blog-detail">ASP.NET Core 10.0, PostgreSQL, Vue.js 3</div>
-												<div class="blog-content">
-													<p>
-														<b>Homassy</b> is a comprehensive home storage management system that helps families and households track inventory, manage shopping lists, and optimize home storage.
+												<h1>Homassy - Home Storage Management System</h1>
+<div class="blog-detail">ASP.NET Core 10.0, PostgreSQL, Vue.js 3 + Nuxt 4 | Passwordless Auth, Real-time Sync</div>
+<div class="blog-content">
+    <p class="tagline">
+        <i>Manage your household inventory, shopping lists, and share everything with your family.</i>
+    </p>
+    
+    <p>
+        <b>Homassy</b> is a modern, comprehensive household inventory management system that helps families stay organized by tracking inventory, managing shopping lists, and optimizing home storage. The application is built with <b>ASP.NET Core 10.0</b> backend, <b>PostgreSQL</b> database, and modern <b>Vue.js 3.5</b> + <b>Nuxt 4.2</b> frontend technology.
+    </p>
+
+    <h3>🔑 Key Features</h3>
+    <ul class="list-style">
+        <li><b>Passwordless Authentication</b> - Secure login with 6-digit email codes</li>
+        <li><b>JWT Token Rotation</b> - Theft protection and automatic token refresh</li>
+        <li><b>Family Management</b> - Invite family members and manage permissions with invite codes</li>
+        <li><b>Product Inventory</b> - Complete tracking with expiration dates, quantities, and consumption tolerance</li>
+        <li><b>Storage Locations</b> - Organize rooms and storage areas (refrigerator, freezer)</li>
+        <li><b>Shopping Lists</b> - Shared family lists with real-time synchronization</li>
+        <li><b>Barcode Lookup</b> - Product data automation via Open Food Facts integration</li>
+        <li><b>Image Upload</b> - Secure image handling with validation features</li>
+        <li><b>Multi-language Support</b> - English, German, and Hungarian languages</li>
+        <li><b>Progressive Web App (PWA)</b> - Offline capability and installability</li>
+        <li><b>Responsive Design</b> - Optimized desktop and mobile interface</li>
+    </ul>
+
+    <h3>🛡️ Security Features</h3>
+    <ul class="list-style">
+        <li>JWT access and refresh tokens with rotation</li>
+        <li>Two-tier rate limiting (global + endpoint-specific)</li>
+        <li>Security headers (CSP, HSTS, X-Frame-Options)</li>
+        <li>Image validation with magic number verification</li>
+        <li>Barcode validation with advanced checksums (EAN-13, EAN-8, UPC-A, UPC-E, Code-128)</li>
+        <li>XSS attack prevention mechanisms</li>
+        <li>Timing attack protection</li>
+    </ul>
+
+    <h3>⚙️ Technology Stack</h3>
+    <ul class="list-style">
+        <li><b>Backend:</b> ASP.NET Core 10.0, Entity Framework Core 10.0, structured logging with Serilog</li>
+        <li><b>Database:</b> PostgreSQL 16 with built-in trigger-based cache invalidation</li>
+        <li><b>Frontend:</b> Vue.js 3.5.25, Nuxt 4.2.2, @nuxt/ui (based on Radix Vue), Pinia state management</li>
+        <li><b>Infrastructure:</b> Docker + Docker Compose, Node.js 22-alpine, Kestrel web server</li>
+        <li><b>Testing:</b> xUnit 2.9.3 with integration tests (100+)</li>
+    </ul>
+
+	<p>
+														More information can be found on GitHub.
 													</p>
-													<p>
-														The application is built with <b>ASP.NET Core 10.0</b> backend and <b>PostgreSQL</b> database, with a modern <b>Vue.js 3</b> and <b>Nuxt</b> frontend design planned.
-													</p>
-													<ul class="list-style">
-														<li>Passwordless authentication with secure email-based login</li>
-														<li>Family member invitation and permission management</li>
-														<li>Storage location management by rooms and containers</li>
-														<li>Product tracking with expiry dates and quantities</li>
-														<li>Shopping list creation and management</li>
-														<li>Real-time inventory monitoring</li>
-														<li>Responsive interface for desktop and mobile devices</li>
-														<li>PostgreSQL database for reliable data storage</li>
-													</ul>
-													<p>
-														The application is currently under development. More information can be found on GitHub.
-													</p>
-												</div>
+</div>
 											</div>
 										</div>
 									</div>

@@ -650,28 +650,55 @@
 										<div class="desc">
 											<div class="post-box">
 												<h1>Homassy - Háztartási Készletkezelő</h1>
-												<div class="blog-detail">ASP.NET Core 10.0, PostgreSQL, Vue.js 3</div>
-												<div class="blog-content">
-													<p>
-														A <b>Homassy</b> egy átfogó háztartási készletkezelő rendszer, amely segít családoknak és háztartásoknak nyomon követni a készleteket, kezelni a bevásárló listákat, és optimalizálni az otthoni tárolást.
+<div class="blog-detail">ASP.NET Core 10.0, PostgreSQL, Vue.js 3 + Nuxt 4 | Passwordless Auth, Real-time Sync</div>
+<div class="blog-content">
+    <p class="tagline">
+        <i>Kezelje háztartási készletét, bevásárló listáit, és ossza meg mindent családjával.</i>
+    </p>
+    
+    <p>
+        A <b>Homassy</b> egy modern, teljes körű háztartási készletkezelő rendszer, amely segít családoknak szervezetten nyomon követni a készleteket, kezelni a bevásárló listákat, és optimalizálni az otthoni tárolást. Az alkalmazás <b>ASP.NET Core 10.0</b> backenddel, <b>PostgreSQL</b> adatbázissal és modern <b>Vue.js 3.5</b> + <b>Nuxt 4.2</b> frontend technológiával készült.
+    </p>
+
+    <h3>🔑 Főbb Funkciók</h3>
+    <ul class="list-style">
+        <li><b>Jelszó nélküli hitelesítés</b> - 6 számjegyű e-mail kódokkal biztonságos bejelentkezés</li>
+        <li><b>JWT token forgatás</b> - Lopás elleni védelem és automatikus token frissítés</li>
+        <li><b>Család kezelés</b> - Tagok meghívása és jogosultságkezelés meghívási kódok segítségével</li>
+        <li><b>Termék készletezés</b> - Teljes nyomon követés lejárati dátummal, mennyiséggel és fogyasztás tűrékenységgel</li>
+        <li><b>Tárolóhelyek</b> - Szobák és tárolók (hűtőszekrény, fagyasztó) szervezése</li>
+        <li><b>Bevásárló listák</b> - Közös családi listák valós idejű szinkronizálással</li>
+        <li><b>Vonalkód keresés</b> - Open Food Facts integrációval termékadat automatizálás</li>
+        <li><b>Képfeltöltés</b> - Biztonságos képkezelés ellenőrzési funkcióval</li>
+        <li><b>Multi-language támogatás</b> - Angol, német és magyar nyelvek</li>
+        <li><b>Progressive Web App (PWA)</b> - Offline képesség és telepíthetőség</li>
+        <li><b>Reszponzív dizájn</b> - Optimalizált asztali és mobil felület</li>
+    </ul>
+
+    <h3>🛡️ Biztonsági Funkciók</h3>
+    <ul class="list-style">
+        <li>JWT hozzáférési és frissítési tokenok forgatással</li>
+        <li>Kétszintű sávszélességi korlátozás (globális + végpont specifikus)</li>
+        <li>Biztonsági fejlécek (CSP, HSTS, X-Frame-Options)</li>
+        <li>Képérvényesítés mágiaszám-alapú ellenőrzéssel</li>
+        <li>Vonalkód ellenőrzés fejlett validációval (EAN-13, EAN-8, UPC-A, UPC-E, Code-128)</li>
+        <li>XSS támadás elleni védelmi mechanizmusok</li>
+        <li>Időzítési támadás elleni védelem</li>
+    </ul>
+
+    <h3>⚙️ Technológia Stack</h3>
+    <ul class="list-style">
+        <li><b>Backend:</b> ASP.NET Core 10.0, Entity Framework Core 10.0, Serilog strukturált naplózással</li>
+        <li><b>Database:</b> PostgreSQL 16 beépített trigger-alapú gyorsítótár-érvénytelenítéssel</li>
+        <li><b>Frontend:</b> Vue.js 3.5.25, Nuxt 4.2.2, @nuxt/ui (Radix Vue alapokon), Pinia state management</li>
+        <li><b>Infrastructure:</b> Docker + Docker Compose, Node.js 22-alpine, Kestrel webszerver</li>
+        <li><b>Tesztelés:</b> xUnit 2.9.3 integrációs tesztekkel (100+)</li>
+    </ul>
+
+    <p>
+														További információkat a GitHub oldalon olvashatsz.
 													</p>
-													<p>
-														Az alkalmazás <b>ASP.NET Core 10.0</b> backenddel és <b>PostgreSQL</b> adatbázissal készül, modern <b>Vue.js 3</b> és <b>Nuxt</b> frontend tervezéssel.
-													</p>
-													<ul class="list-style">
-														<li>Jelszó nélküli hitelesítés biztonságos e-mail alapú bejelentkezéssel</li>
-														<li>Család tagok meghívása és jogosultságkezelés</li>
-														<li>Tárolóhelyek kezelése szobák és tárolók szerint</li>
-														<li>Termékek nyomon követése lejárati dátummal és mennyiséggel</li>
-														<li>Bevásárló listák létrehozása és kezelése</li>
-														<li>Valós idejű készlet figyelés</li>
-														<li>Reszponzív felület asztali és mobil eszközökre</li>
-														<li>PostgreSQL adatbázis a megbízható adattárolásért</li>
-													</ul>
-													<p>
-														Az alkalmazás jelenleg fejlesztés alatt áll. További információkat a GitHub oldalon olvashatsz.
-													</p>
-												</div>
+</div>
 											</div>
 										</div>
 									</div>
